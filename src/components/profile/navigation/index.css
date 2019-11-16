@@ -1,0 +1,46 @@
+
+.profile-status {
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.account-type {
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px 5px 3px 5px;
+    width: max-content;
+    background: #5069dd;
+    color: #ffffff;
+    align-content: center;
+    justify-self: right;
+}
+
+.profile-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.profile-image > img {
+    position: absolute;
+    left: -30px;
+    width: 150px;
+}
+
+.profile-username {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.profile-position {
+    color: #B3B6BC;
+    font-size: 16px;
+    text-align: center;
+}

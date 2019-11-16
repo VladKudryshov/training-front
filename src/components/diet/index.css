@@ -1,0 +1,383 @@
+.tab > li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tab > li:first-child {
+    margin: 0;
+}
+
+.tab {
+    width: 100%;
+
+}
+
+.tab > li:hover {
+    cursor: pointer;
+    color: #20c997;
+}
+
+.active-li {
+    text-decoration: underline;
+    color: #20c997;
+}
+
+.trainings {
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.component {
+    display: grid;
+    grid-row-gap: 20px;
+
+}
+
+.slide-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-column-gap: 20px;
+}
+
+.slide-card > i {
+    font-size: 18pt;
+    color: #000000;
+}
+
+.slide-card > i:hover {
+    cursor: pointer;
+    font-size: 18pt;
+}
+
+.set-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 20px;
+}
+
+.card-item {
+    height: 250px;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-item > h3 {
+    width: 100%;
+    top: 110px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    z-index: 3;
+
+}
+
+.week-card {
+    background: #ffffff;
+    height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.week-card > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.week-card > h4 {
+    width: 100%;
+    position: absolute;
+    top: 19px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    z-index: 3;
+}
+
+.creator {
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.creator > .avatar {
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.creator > .avatar > img {
+    position: absolute;
+    left: -17px;
+    width: 50px;
+}
+
+.creator > .name {
+    font-size: 16px;
+}
+
+.active-plan {
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.active {
+    color: #20c997;
+}
+
+.active-plan:hover {
+    cursor: pointer;
+    color: #20c997;
+}
+
+.diet-header {
+    padding: 40px 20px 20px 20px;
+    width: 100%;
+    background: #373F46 !important;
+}
+
+.diet-info {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.diet-info > div > label {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.diet-info > div {
+    font-size: 16px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #6e6e6e;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+.progress-bar > div{
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar > div > .progress {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar > div > .progress > .st {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background: #6e6e6e;
+    animation: loader 0.5s linear;
+}
+
+.progress-bar > div > .progress > div{
+    height: 100%;
+    position: absolute;
+}
+
+.progress-bar > div > .progress > div:first-child{
+    right: 0;
+}
+
+.progress-bar > div > .progress > div > .progress-done{
+    left: 0;
+    background: #5cd687;
+    height: 100%;
+    clear: both;
+}
+
+.progress-bar > div > .progress > div > .progress-more{
+    background: #e36050;
+    height: 100%;
+}
+
+.progress-bar > div > .progress-water {
+    position: relative;
+    height: 10px;
+    background: #2c92d6;
+    border-radius: 5px;
+    animation: loader 1s linear;
+
+}
+
+.calories, .water{
+    grid-column: 1/4;
+    width: 100%;
+}
+
+.finish-progress, .current-progress{
+    font-weight: 600;
+
+}
+
+.current-progress {
+    width: 50px;
+    top: -20px;
+    right: -25px;
+    position: absolute;
+}
+
+.add-eating {
+    bottom: -40px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #65d67b;
+    text-align: center;
+}
+
+.add-water {
+    bottom: -40px;
+    font-size: 16px;
+    position: absolute;
+    right: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #2c92d6;
+    text-align: center;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+.meal {
+    display: grid;
+    grid-template-columns: 30px auto 1fr auto auto;
+    grid-gap: 20px;
+    background: #373F46 !important;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.nutritional-value {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.dishes{
+    padding: 0 20px;
+
+}
+
+.dish {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+.dish-header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.dish-header > .info {
+    color: #555555;
+    font-size: 16px;
+}
+
+.dish-header > .info > span {
+    padding: 10px;
+}
+
+.dish > .diet-info {
+    grid-column: 1/3;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.dish-current-progress {
+}
+
+.dish-progress-bar {
+    position: relative;
+    width: 100%;
+    background: #6e6e6e;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.dish-current-progress, .dish-finish-progress, .type {
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 9999;
+    font-size: 14px;
+}
+
+.type{
+
+}
+
+.dish-progress-bar > .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #65d67b;
+    border-radius: 5px;
+}
+
+.overlay{
+    padding: 40px 20px 20px 20px;
+    position: relative;
+    background: #30373E;
+}
+
+
+@keyframes loader {
+    100% {width: 0}
+    80% {width: 20%}
+    60% {width: 40%}
+    40% {width: 60%}
+    20% {width: 80%}
+    0%{width: 100%}
+}
+
+

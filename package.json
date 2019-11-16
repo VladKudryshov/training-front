@@ -3,9 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "proxy-addr": "~2.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-notifications": "^1.4.3",
+    "react-redux": "^6.0.0",
+    "react-router": "3.2.5",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.1.2",
+    "react-stomp": "4.1.1",
+    "react-talk": "^1.0.0",
+    "react-toastify": "^5.3.2",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-form": "^8.1.0",
+    "redux-saga": "^0.16.2"
   },
   "scripts": {
     "start": "react-scripts start",

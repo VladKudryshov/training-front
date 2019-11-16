@@ -1,0 +1,17 @@
+.tooltip {
+    position: absolute;
+    display: none;
+    left: -100%;
+    top: 0;
+    background: #393939;
+    color: #ffffff;
+    border-radius: 1em;
+    padding: 5px 10px;
+    font-size: 12px;
+    z-index: 9999;
+    transform: translateX(-100%);
+}
+
+i:hover + .tooltip {
+    display: block;
+}
