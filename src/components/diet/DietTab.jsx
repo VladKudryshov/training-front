@@ -2,10 +2,9 @@ import React from 'react';
 import "./index.css"
 import Tooltip from "../utils/Tooltip";
 import DietPlans from "./DietPlans";
-import CurrentDietPlan from "./CurrentDietPlan";
 import DietWeeksContainer from "../../containers/DietWeeksContainer";
 
-const DietChild = ({isPlans, hide}) => (
+const DietTab = ({isPlans, hide}) => (
     <div className="child card">
         <div className="card-header">
             <h2><strong>Программы</strong> питания</h2>
@@ -26,5 +25,5 @@ const DietChild = ({isPlans, hide}) => (
     </div>
 
 )
-export default DietChild;
+export default DietTab;
 

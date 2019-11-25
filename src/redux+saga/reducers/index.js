@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux'
-import dietStat from "./dietStat";
-import dishesCatalog from "./dishesCatalog";
+import dietDay from "./dietDay";
+import dishes from "./dishes";
+import chat from "./chat";
+import calendarEvents from "./calendarEvents";
 
 export default combineReducers({
-    dietStat,
-    dishesCatalog
+    dietDay,
+    dishes,
+    chat,
+    calendarEvents
 })

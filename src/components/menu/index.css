@@ -1,5 +1,6 @@
 .global-nav{
     margin: 0 auto;
+    display: grid;
 }
 
 .global-nav > ul {
@@ -9,7 +10,9 @@
 }
 
 .global-nav > ul > li {
+    font-size: 18px;
     display: inline-block;
+    align-self: center;
 }
 
 

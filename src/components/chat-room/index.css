@@ -121,10 +121,13 @@
 
 .their-message {
     text-align: left;
+    color: #393939;
 }
 
 .your-message {
     text-align: right;
+    color: #393939;
+    justify-self: right;
 }
 
 .message-card, .my-message-card, .their-message-card {
@@ -136,27 +139,27 @@
 
 .their-message-card:before {
     bottom: 100%;
-    left: 7%;
+    left: 4%;
     border: 10px solid transparent;
     content: " ";
     height: 0;
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #fff;
+    border-bottom-color: #ffffff;
     margin-left: -10px;
 }
 
 .my-message-card:before{
     bottom: 100%;
-    right: 7%;
+    right: 2%;
     border: 10px solid transparent;
     content: " ";
     height: 0;
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #efefef;
+    border-bottom-color: #ffffff;
     margin-left: -10px;
 }
 

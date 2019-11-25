@@ -1,0 +1,60 @@
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.price-plan {
+    height: max-content;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.price-plan > .header {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background: #6F4366;
+    padding: 30px;
+    text-align: center;
+}
+
+.plan-name {
+    text-transform: uppercase;
+}
+
+.price-plan > .content {
+    background: #ffffff;
+    width: 100%;
+}
+.price-plan > .action {
+    background: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.price-plan > .content > li {
+    padding: 10px 20px;
+}
+
+.price-plan > .content > li:nth-child(2n+1) {
+    background: #f9f9f9;
+}
+
+.subscribe{
+    display: block;
+    margin: 0 auto;
+}
+
+.plan-tag {
+    position: absolute;
+    background: #ffb932;
+    z-index: 10;
+    color: #ffffff;
+    padding: 15px 30px 10px 30px;
+    text-align: center;
+    right: -30px;
+    top: -5px;
+    transform: rotate(45deg);
+}

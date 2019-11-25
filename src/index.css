@@ -36,16 +36,20 @@ ul, li {
 
 header {
     width: 100%;
-    height: 40px;
+    height: 50px;
     position: sticky;
     top: 0;
     background: #30373E;
     color: #ffffff;
-    padding: 10px 30px;
+    padding: 5px 10px;
     z-index: 9999;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 120px 1fr auto;
+}
+
+header > img {
+    height: 100%;
 }
 
 footer {
@@ -53,6 +57,9 @@ footer {
     background: #30373E;
 }
 
+.global-wrapper {
+    height: 100vh;
+}
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -83,6 +90,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-gap: 30px;
     align-items: center;
 }
 
@@ -106,9 +114,13 @@ footer {
     color: #ffffff;
 }
 
-.default-c {
+.default-bg {
     color: #ffffff;
     background: #2c92d6;
+}
+
+.default-c {
+    color: #2c92d6;
 }
 
 .btn {
@@ -116,6 +128,10 @@ footer {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.full {
+    width: 100% !important;
 }
 
 .btn-empty {
@@ -180,7 +196,7 @@ footer {
     align-items: center;
 }
 
-.modal-header > .fa-times{
+.modal-header > .fa-times {
     font-size: 16px;
 }
 
@@ -223,6 +239,10 @@ footer {
 .hover:hover {
     cursor: pointer;
     color: #65d67b;
+}
+
+.simple-hover:hover {
+    cursor: pointer;
 }
 
 .water-hover:hover {
@@ -276,15 +296,16 @@ footer {
     border-radius: 10px 0 0 10px;
 }
 
-.card-content{
+.card-content {
     padding: 20px;
 }
 
 .card {
+    background: #ffffff;
     padding: 20px;
 }
 
-.header-dropdown{
+.header-dropdown {
     position: absolute;
     font-size: 18px;
     top: 0;
@@ -306,4 +327,24 @@ h2:before {
     left: -20px;
     top: 0;
     content: '';
+}
+
+.search-dishes {
+    width: 100%;
+    border: 1px solid #B3B6BC;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.clients {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+    grid-gap: 20px;
+}
+
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) );
+    grid-gap: 20px;
 }

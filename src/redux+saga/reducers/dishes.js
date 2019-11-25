@@ -1,7 +1,7 @@
-import {SAVE_STAT} from "../actions/dietStatActions";
+import {ADD_DISHES_TO_LIST, SAVE_STAT} from "../actions/dietStatActions";
 
-const dishesCatalog = (state = {
-    dishes: [
+const dishes = (state = {
+    catalog: [
         {
             info: {
                 name: 'asd',
@@ -94,6 +94,12 @@ const dishesCatalog = (state = {
                 dishes: action.data
             }
         }
+        case ADD_DISHES_TO_LIST: {
+            return {
+                ...state,
+                current: [...state.current, action.data]
+            }
+        }
 
         default:
             return state
@@ -101,4 +107,4 @@ const dishesCatalog = (state = {
 };
 
 
-export default dishesCatalog
+export default dishes

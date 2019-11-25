@@ -32,6 +32,7 @@ const Day = ({currentDate, date, startDate, endDate, onClick}) => {
     let className = [];
 
     if (moment().isSame(date, 'day')) {
+        className.push('contains-events');
         className.push('active');
     }
 
@@ -116,7 +117,6 @@ const Days = ({date, startDate, endDate, onClick}) => {
 
     }
 
-    console.log(days)
 
     return (
         <nav className="calendar--days">
@@ -217,7 +217,6 @@ class DatePicker extends Component {
     render() {
         const {selectedType, date, startDate, endDate} = this.state;
 
-        console.log(this.state)
 
         return (
             <div id="calendar" className="gap">
@@ -237,29 +236,6 @@ class DatePicker extends Component {
             </div>
         )
     }
-}
-
-
-{/*<div className="calendar-header">
-    <div className="calendar-today">
-        <div className="day-name">MON</div>
-        <div className="day-value">5</div>
-    </div>
-
-    <div className="calendar-current-mouth">
-        October 2019
-    </div>
-    <div>
-        <i className="fas fa-chevron-left"></i>
-        <i className="fas fa-chevron-right"></i>
-    </div>
-</div>
-<ul className="calendar-choose-type">
-    <li>Today</li>
-<li className="calendar-type-active">This week</li>
-<li>Next week</li>
-</ul>
-<div className="calendar-mouth"></div>*/
 }
 
 export default DatePicker

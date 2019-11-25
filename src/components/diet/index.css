@@ -215,13 +215,13 @@
 
 .progress-bar > div > .progress > div > .progress-done{
     left: 0;
-    background: #5cd687;
+    background: #65d6ae;
     height: 100%;
     clear: both;
 }
 
 .progress-bar > div > .progress > div > .progress-more{
-    background: #e36050;
+    background: #e37361;
     height: 100%;
 }
 
@@ -306,6 +306,11 @@
     margin-top: 10px;
     padding: 10px;
     box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+}
+
+.dish-catalog:hover{
+    background: #f2f2f2;
+    cursor: pointer;
 }
 
 .dish-header{

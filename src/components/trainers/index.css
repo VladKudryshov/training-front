@@ -1,0 +1,45 @@
+.card {
+    border-radius: 5px;
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 10px);
+    grid-gap: 20px;
+}
+
+.trainer-actions {
+    position: absolute;
+    top: 15px;
+    left: -70px;
+    background: #ffffff;
+    z-index: 9999;
+    box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.trainer-actions > li {
+    padding: 10px;
+    color: #737373;
+}
+
+.trainer-actions > li:hover {
+    cursor: pointer;
+    background: #f9f9f9;
+    color: #000000;
+}
+
+.trainer-info {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.trainer-action {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}

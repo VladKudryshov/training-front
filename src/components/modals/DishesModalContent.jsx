@@ -1,6 +1,7 @@
 import React from 'react';
-import DietInfo from "../diet/DietInfo";
+import DietInfo from "../diet/dietDay/DietInfo";
 import Dish from "../diet/dish/Dish";
+import CatalogDishesContainer from "../../containers/CatalogDishesContainer";
 
 const DishesModalContent = ({isCatalog, open, dishes}) => (
     <div>
@@ -29,12 +30,12 @@ const DishesModalContent = ({isCatalog, open, dishes}) => (
                     }}/>
                 </div>
                 <div className="diet-actions">
-                    <i className="fas fa-drumstick-bite add-eating hover " onClick={()=>open()}/>
+                    <i className="fas fa-drumstick-bite add-eating simple-hover " onClick={()=>open()}/>
                 </div>
             </div>
             <ul className="dishes">
                 {isCatalog
-                    ? dishes.dishes.map(dish=> <Dish stat={dish.stat} info={dish.info}/>)
+                    ? <CatalogDishesContainer/>
                     : dishes.current.map(dish=> <Dish stat={dish.stat} info={dish.info}/>)
                 }
             </ul>

@@ -1,15 +1,13 @@
 import React from 'react';
 import "../index.css"
 
-const EventCard = () => (
+const EventCard = ({event}) => (
     <li className="event-card event">
         <ul className="event-times">
-            <li className="event-start">23:23</li>
-            <li className="event-stop">23:50</li>
+            <li className="event-start">{event.name}</li>
+            <li className="event-stop">{event.date}</li>
         </ul>
-        <div className="event-priority event-latest"></div>
-        <div className="event-user">Row Attribute</div>
-        <div className="event-service">Service</div>
+        <div className="event-time">{event.time}</div>
     </li>
 )
 export default EventCard;

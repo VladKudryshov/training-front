@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ChatCard from "./ChatCard";
 import "../index.css"
 
 
-const ChatList = () => (
+const ChatList = ({chatRooms}) => (
     <div>
         <div className="search card-wp">
             <input name="q" type="text" placeholder="Поиск..." value="" autoComplete="off" maxLength="240"
@@ -16,7 +16,9 @@ const ChatList = () => (
             </svg>
         </div>
         <ul className="chat-room">
-            <ChatCard/>
+
+            {chatRooms.map(room => <ChatCard room={room}/>)}
+
         </ul>
     </div>
 )

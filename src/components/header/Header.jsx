@@ -4,7 +4,7 @@ import GlobalMenu from "../menu/GlobalMenu";
 
 const Header = () => (
     <header>
-        <img src="" alt="logo"/>
+        <img src="logo.png" alt="logo"/>
         <GlobalMenu/>
         <div>
 

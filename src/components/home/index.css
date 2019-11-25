@@ -1,0 +1,60 @@
+.reg-type {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 200px;
+    align-items: center;
+}
+
+.reg-type > div {
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+.reg-type > div > img {
+    top: -30px;
+    left: calc(50% - 140px);
+    width: 250px;
+    background: #ffffff;
+    padding: 20px 30px;
+    justify-self: center;
+}
+
+.reg-type > div > h2 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.properties {
+    font-size: 17px;
+    bottom: 100px;
+    font-weight: 300;
+}
+
+.properties > li {
+    color: #000000 !important;
+}
+
+.btn-reg {
+    background: #ffb932;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    justify-self: center;
+}
+
+
+

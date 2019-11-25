@@ -1,6 +1,6 @@
 import React from 'react';
-import "./index.css"
-import * as dietUtils from "./utils/dietUtils";
+import "../index.css"
+import * as dietUtils from "../utils/dietUtils";
 
 const DietInfo = ({stat}) => (
 

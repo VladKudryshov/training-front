@@ -1,8 +1,8 @@
 import React from 'react';
 import DishInfo from "./DishInfo";
 
-const Dish = ({info, stat}) => (
-    <li className="dish">
+const Dish = ({info, stat, fromCatalog, addDishToList}) => (
+    <li className={fromCatalog ? "dish dish-catalog": "dish"} onClick={()=> fromCatalog && addDishToList({info,stat})}>
         <div className="dish-header">
             <div className="info">
                 <span className="name">{info.name}</span>

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import DietDay from "../components/diet/DietDay";
+import DietDay from "../components/diet/dietDay/DietDay";
 import ModalContainer from "./ModalContainer";
-import DishesInfoModalContent from "../components/modals/DishesInfoModalContent";
 import WaterModalContent from "../components/modals/WaterModalContent";
 
 import connect from "react-redux/es/connect/connect";
@@ -24,7 +23,7 @@ class DietDayContainer extends Component {
         },
         info:{
             modalTitle: 'Информация о приеме',
-            modalContent: <DishesInfoModalContent/>,
+            modalContent: <DishesModalContainer/>,
         } ,
         content: {
             modalTitle: '',
@@ -40,11 +39,10 @@ class DietDayContainer extends Component {
     };
 
     render() {
-        console.log(this.props.dietStat);
 
         return (
             <>
-                <DietDay openModal={this.openTimeInfo} stat={this.props.dietStat.stat}/>
+                <DietDay openModal={this.openTimeInfo} dietDay={this.props.dietDay} />
                 <ModalContainer isOpen={this.state.visible} close={this.openTimeInfo} content={this.state.content}/>
             </>
         );
@@ -53,9 +51,9 @@ class DietDayContainer extends Component {
 
 
 const mapStateToProps = (state) => {
-    const dietStat = state.dietStat;
+    const dietDay = state.dietDay;
     return ({
-        dietStat
+        dietDay
     });
 };
 

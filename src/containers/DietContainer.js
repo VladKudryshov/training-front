@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DietChild from "../components/diet/DietChild";
+import DietTab from "../components/diet/DietTab";
 
 
 class DietContainer extends Component {
@@ -14,10 +14,9 @@ class DietContainer extends Component {
     };
 
     render() {
-        console.log(this.state.visible);
 
         return (
-            <DietChild isPlans={this.state.visible} hide={this.hide}/>
+            <DietTab isPlans={this.state.visible} hide={this.hide}/>
         );
     }
 }

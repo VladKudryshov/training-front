@@ -3,7 +3,7 @@ import Header from "../header/Header";
 
 
 const Root = ({ children }) => (
-    <div>
+    <div className="global-wrapper">
         <Header/>
         {children}
         <footer/>

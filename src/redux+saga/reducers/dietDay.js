@@ -1,6 +1,6 @@
 import {SAVE_STAT} from "../actions/dietStatActions";
 
-const dietStat = (state = {
+const dietDay = (state = {
     stat: {
         finish: {
             squirrels: 232,
@@ -16,7 +16,11 @@ const dietStat = (state = {
             calories: 3100,
             water: 3000
         }
-    }
+    },
+    eatingList: [
+        {name: 'asd'},
+        {name: 'asd'},
+    ]
 }, action) => {
 
     switch (action.type) {
@@ -33,4 +37,4 @@ const dietStat = (state = {
 };
 
 
-export default dietStat
+export default dietDay

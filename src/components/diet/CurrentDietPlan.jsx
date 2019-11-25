@@ -6,7 +6,7 @@ const CurrentDietPlan = ({location, planId, weeks}) => (
 
     <div className="set-days">
 
-        <DietWeekTrainingCard parentPath={location ? location.pathname : `diet/${planId}`} weekOfTraining="WEEK 1"
+        <DietWeekTrainingCard parentPath={location ? location.pathname : `/diet/${planId ? planId : 'default'}`} weekOfTraining="WEEK 1"
                               weekid={1}/>
 
     </div>

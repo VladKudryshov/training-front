@@ -14,7 +14,6 @@ class TrainingContainer extends Component {
     };
 
     render() {
-        console.log(this.state.visible);
 
         return (
             <TrainingChild isPlans={this.state.visible} hide={this.hide}/>
